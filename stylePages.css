@@ -1,0 +1,30 @@
+main h1, main p, main h2, .main ul, main li, .imgDiv{
+    width: 70%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisor {
+    height: 1px;
+    width: 60%;
+    margin: 50px 0;
+    background-color: #bdbdbd;
+}
+
+.imgDiv {
+    text-align: center;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imgDiv img {
+    width: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+}

@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    height: 100px;
+    background-color: #ff9d4d;
+}
+
+header .container {
+    height: 100%;
+    width: 100%;
+    max-width: 95%;
+}
+
+header .container .row {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .container .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#logotipo {
+    height: 50%;
+}
+
+.subTitulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+header form {
+    display: flex;
+}
+
+header form fieldset {
+    text-align: right;
+}
+
+header form fieldset label {
+    user-select: none;
+}
+
+header form fieldset input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    padding-left: 10px;
+    color: #000;
+    outline: none;
+}
+
+header form fieldset input::placeholder {
+    color: #5c3516;
+}
+
+header form .loginSubmit {
+    width: 100px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    color: #fff;
+    transition: 0.2s;
+}
+
+header form .loginSubmit:hover {
+    background-color: #373737;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link, .dropdown-toggle {
+    color: #cacaca;
+}
+
+.firstNav {
+    margin-left: 45px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+}
+
+.dropdown-item {
+    color: #cacaca;
+}
+
+.dropdown-item:hover {
+    color: #000;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.sideBar {
+    width: 200px;
+    background-color: #1c1c1c;
+}
+
+
+
+/* Lojas */
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    border-left: 1px solid #b8b8b8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardProd {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.produto-preco {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.comprarBox, .carrinho {
+    border: 1px solid #b8b8b8;
+    border-radius: 15px;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    height: 800px;
+    padding: 20px 0;
+}
+
+.carrinhoProd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #b8b8b8;
+    border-radius: 15px;
+    height: 70px;
+    width: 90%;
+}
+
+.comprarBox {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 25px;
+    height: 100px;
+    width: 27%;
+    background-color: #1c1c1c;
+}
+
+.comprarButton {
+    height: 60%;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9d4d;
+    font-size: 25px;
+}
+
+.valorFinal {
+    color: #fff;
+    font-size: 25px;
+}
+
+.btn-diminuir, .btn-aumentar {
+    border: 1px solid #e67e22;
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+.btn-diminuir:hover, .btn-aumentar:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.carrinhoDisplayF {
+    display: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #4e4e4e;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer div:first-child {
+    justify-content: flex-start;
+    margin-left: 80px;
+    border-left: none;
+}
+
+footer div:first-child li {
+    list-style: none;
+}
+
+footer svg {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer svg:hover {
+    color: #e67e22;
+}
+
+footer iframe {
+    padding: 5px;
+    transition: 0.2s;
+}
+
+footer iframe:hover {
+    padding: 0;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+footer li a:hover {
+    color: #e67e22;
+}
+
+.primeirasNoticias {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.primeirasNoticias .imgDiv {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primeirasNoticias .imgDiv:hover {
+    padding: 0;
+}
+
+.listaNoticias {
+    width: 70%;
+}
+
+.listaNoticias a{
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 1290px) {
+    header form fieldset input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .loginBox {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .produtos, .valores {
+        width: 100%;
+    }
+
+    .comprarBox {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .subTitulo {
+        font-size: 20px;
+    }
+}
